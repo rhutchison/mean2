@@ -17,8 +17,11 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# node-waf configuration
-.lock-wscript
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
@@ -26,8 +29,25 @@ build/Release
 # Dependency directory
 node_modules
 
-# Optional npm cache directory
-.npm
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+/node_modules/
+/typings/
 
-# Optional REPL history
-.node_repl_history
+# Users Environment Variables
+.lock-wscript
+.tsdrc
+.typingsrc
+
+#IDE configuration files
+.idea
+.vscode
+*.iml
+
+dist
+dev
+docs
+lib
+test
+tmp
